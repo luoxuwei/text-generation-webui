@@ -61,7 +61,7 @@ def generate_response(history, query, file):
     # [("你好吗?", "我很好，你")]
     # [("你好吗?", "我很好，你呢")]
     # [("你好吗?", "我很好，你呢？")]
-    for char in result["answer"]:
+    for char in result:
         history[-1][-1] += char
         yield history, ""
 
